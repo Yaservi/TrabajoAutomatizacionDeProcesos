@@ -1,0 +1,49 @@
+<div class="calificaciones-container">
+
+  <!-- 🔍 Input de búsqueda -->
+  <div class="busqueda-calificacion">
+    <input type="text" placeholder="Buscar por nombre del alumno" [(ngModel)]="filtroAlumno" />
+  </div>
+
+  <div class="tabla-wrapper" *ngIf="!cargando">
+    <table class="tabla-calificaciones">
+      <thead>
+        <tr>
+          <th>Alumno</th>
+          <th>Materia</th>
+          <th>Participación</th>
+          <th>1er Parcial</th>
+          <th>2do Parcial</th>
+          <th>Trabajo Inv.</th>
+          <th>Trabajo Final</th>
+          <th>Examen Final</th>
+          <th>Nota Final</th>
+          <th>Leyenda</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let cal of calificacionesFiltradas(); index as i">
+          <td>{{ obtenerNombreAlumno(cal.idAlumno) }}</td>
+          <td>{{ obtenerNombreMateria(cal.idMateria) }}</td>
+          <td>{{ cal.participacion }}</td>
+          <td>{{ cal.primerParcial }}</td>
+          <td>{{ cal.segundoParcial }}</td>
+          <td>{{ cal.trabajoInvestigacion }}</td>
+          <td>{{ cal.trabajoFinal }}</td>
+          <td>{{ cal.examenFinal }}</td>
+          <td>{{ cal.nota }}</td>
+          <td>
+            <small class="leyenda-nota">{{ obtenerLeyendaNota(cal.nota) }}</small>
+          </td>
+          <td>
+            <button class="btn-accion editar" (click)="editarCalificacion(cal)">✏</button>
+            <button class="btn-accion borrar" (click)="eliminarCalificacion(cal.id)">🗑️</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p class="cargando-texto" *ngIf="cargando">Cargando calificaciones...</p>
+</div>

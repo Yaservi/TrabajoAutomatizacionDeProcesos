@@ -1,0 +1,30 @@
+<table class="materias-table">
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Nombre Materia</th>
+      <th>Descripción</th>
+      <th>Maestro</th>
+      <th class="text-center">Acciones</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngIf="materias.length === 0">
+      <td colspan="5" class="sin-materias">No hay materias registradas.</td>
+    </tr>
+    <tr *ngFor="let materia of materias">
+      <td>{{ materia.id }}</td>
+      <td>{{ materia.nombreMateria }}</td>
+      <td>{{ materia.descripcion }}</td>
+      <td>{{ materia.maestro?.nombre }} {{ materia.maestro?.apellido }}</td>
+      <td class="text-center">
+        <button class="btn-accion editar" (click)="editarMateriaHandler(materia)">
+          <i class="bi bi-pencil"></i>
+        </button>
+        <button class="btn-accion borrar" (click)="borrarMateriaHandler(materia)">
+          <i class="bi bi-trash"></i>
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>

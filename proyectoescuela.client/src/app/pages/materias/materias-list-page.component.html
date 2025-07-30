@@ -1,0 +1,27 @@
+<div class="materias-page-container">
+  <div class="materias-header">
+    <h2>Materias Registradas</h2>
+    <button class="btn-agregar" (click)="mostrarModal = true">
+      <i class="bi bi-person-plus"></i> Agregar Materia
+    </button>
+  </div>
+
+  <div class="materias-table-container">
+    <app-materia-list [materias]="materias"
+                     (editarMateria)="editarMateria($event)"
+                     (borrarMateria)="borrarMateria($event)">
+    </app-materia-list>
+  </div>
+
+  <div class="modal-backdrop" *ngIf="mostrarModal" (click)="cerrarModal()"></div>
+  <div class="modal" *ngIf="mostrarModal">
+    <div class="modal-content" (click)="$event.stopPropagation()">
+      <button class="modal-close" (click)="cerrarModal()">&times;</button>
+      <app-materia-register
+        [maestros]="maestros"
+        [materia]="materiaAEditar"
+        (submitted)="cerrarModal()">
+      </app-materia-register>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,28 @@
+<div class="asistencia-page-container">
+  <div class="asistencia-header">
+    <h2>Asistencia de Alumnos</h2>
+    <button class="btn-agregar" (click)="mostrarModal = true">
+      <i class="bi bi-person-plus"></i> Registrar Asistencia
+    </button>
+  </div>
+
+  <div class="asistencia-table-container">
+    <app-asistencia-list [asistencias]="asistencias"
+                     (editarAsistencia)="editarAsistencia($event)"
+                     (borrarAsistencia)="borrarAsistencia($event)">
+    </app-asistencia-list>
+  </div>
+
+  <div class="modal-backdrop" *ngIf="mostrarModal" (click)="cerrarModal()"></div>
+  <div class="modal" *ngIf="mostrarModal">
+    <div class="modal-content" (click)="$event.stopPropagation()">
+      <button class="modal-close" (click)="cerrarModal()">&times;</button>
+      <app-asistencia-register
+        [alumnos]="alumnos"
+        [materias]="materias"
+        [asistencia]="asistenciaAEditar"
+        (submitted)="cerrarModal()">
+      </app-asistencia-register>
+    </div>
+  </div>
+</div>

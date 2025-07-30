@@ -1,0 +1,23 @@
+<div class="maestros-page-container">
+  <div class="maestros-header">
+    <h2>Maestros Registrados</h2>
+    <button class="btn-agregar" (click)="mostrarModal = true">
+      <i class="bi bi-person-plus"></i> Agregar Maestro
+    </button>
+  </div>
+
+  <div class="maestros-table-container">
+    <app-maestro-list [maestros]="maestros"
+                     (editarMaestro)="editarMaestro($event)"
+                     (borrarMaestro)="borrarMaestro($event)">
+    </app-maestro-list>
+  </div>
+
+  <div class="modal-backdrop" *ngIf="mostrarModal" (click)="cerrarModal()"></div>
+  <div class="modal" *ngIf="mostrarModal">
+    <div class="modal-content" (click)="$event.stopPropagation()">
+      <button class="modal-close" (click)="cerrarModal()">&times;</button>
+      <app-maestro-register (submitted)="cerrarModal()"></app-maestro-register>
+    </div>
+  </div>
+</div>

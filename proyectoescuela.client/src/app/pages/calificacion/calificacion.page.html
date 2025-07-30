@@ -1,0 +1,43 @@
+
+
+<div class="calificaciones-page-container">
+  <div class="calificaciones-header">
+    <h2>Calificaciones Registradas</h2>
+    <button class="btn-agregar" (click)="abrirRegistro()">
+      <i class="bi bi-plus-circle"></i> Agregar Calificación
+    </button>
+  </div>
+
+  <div class="calificaciones-table-container">
+    <!-- Referencia al componente hijo con #listComp -->
+    <app-list-calificacion #listComp
+                           (editar)="abrirEdicion($event)"
+                           (eliminado)="onCalificacionEliminada($event)">
+    </app-list-calificacion>
+  </div>
+
+  <!-- Fondo del modal -->
+  <div class="modal-backdrop" *ngIf="mostrarModal" (click)="cerrarModal()"></div>
+
+  <!-- Contenido del modal -->
+  <div class="modal" *ngIf="mostrarModal">
+    <div class="modal-content" (click)="$event.stopPropagation()">
+      <button class="modal-close" (click)="cerrarModal()">&times;</button>
+
+      <!-- Registro de nueva calificación -->
+      <ng-container *ngIf="!modoEdicion">
+        <app-register-calificacion (volver)="cerrarModal()"
+                                   (registrada)="onCalificacionRegistrada()">
+        </app-register-calificacion>
+      </ng-container>
+
+      <!-- Edición de calificación existente -->
+      <ng-container *ngIf="modoEdicion && calificacionSeleccionada">
+        <app-update-calificacion [calificacion]="calificacionSeleccionada"
+                                 (volver)="cerrarModal()"
+                                 (actualizado)="onCalificacionActualizada($event)">
+        </app-update-calificacion>
+      </ng-container>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,10 @@
+{
+"SpaProxyServer": {
+"ServerUrl": "https://localhost:51318",
+"RedirectUrl": "",
+"LaunchCommand": "npm start",
+"WorkingDirectory": "C:\\Users\\yass\\Desktop\\proyectoescuela\\TrabajoAutomatizacionDeProcesos-dev\\ProyectoEscuela.Server\\..\\proyectoescuela.client",
+"MaxTimeoutInSeconds": "120",
+"KeepRunning": "false"
+}
+}

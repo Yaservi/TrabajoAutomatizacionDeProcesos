@@ -1,0 +1,56 @@
+<div *ngIf="mensaje" class="alert alert-info text-center mt-3">{{ mensaje }}</div>
+
+<div class="container mt-4 d-flex justify-content-center">
+  <div class="card shadow-lg" style="max-width: 500px; width: 100%;">
+    <div class="card-header text-white text-center">
+      <h3 class="mb-0">
+        <i class="bi bi-book-fill me-2"></i>
+        {{ isEdit ? 'Editar Materia' : 'Registro de Materia' }}
+      </h3>
+    </div>
+    <div class="card-body">
+      <form [formGroup]="materiaForm" (ngSubmit)="onSubmit()" autocomplete="off">
+
+        <div class="mb-3">
+          <label class="form-label"><i class="bi bi-journal-text"></i> Nombre Materia</label>
+          <input type="text" class="form-control" formControlName="nombreMateria"
+                 [ngClass]="{'is-invalid': materiaForm.get('nombreMateria')?.invalid && materiaForm.get('nombreMateria')?.touched}">
+          <div *ngIf="materiaForm.get('nombreMateria')?.invalid && materiaForm.get('nombreMateria')?.touched" class="invalid-feedback">
+            El nombre de la materia es obligatorio.
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label"><i class="bi bi-card-text"></i> Descripción</label>
+          <textarea class="form-control" formControlName="descripcion" rows="3"
+                    [ngClass]="{'is-invalid': materiaForm.get('descripcion')?.invalid && materiaForm.get('descripcion')?.touched}"></textarea>
+          <div *ngIf="materiaForm.get('descripcion')?.invalid && materiaForm.get('descripcion')?.touched" class="invalid-feedback">
+            La descripción es obligatoria.
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label"><i class="bi bi-person-badge"></i> Maestro</label>
+          <select class="form-select" formControlName="maestroId"
+                  [ngClass]="{'is-invalid': materiaForm.get('maestroId')?.invalid && materiaForm.get('maestroId')?.touched}">
+            <option value="">Seleccione un maestro</option>
+            <option *ngFor="let maestro of maestros" [value]="maestro.id">
+              {{ maestro.nombre }} {{ maestro.apellido }}
+            </option>
+          </select>
+          <div *ngIf="materiaForm.get('maestroId')?.invalid && materiaForm.get('maestroId')?.touched" class="invalid-feedback">
+            El maestro es obligatorio.
+          </div>
+        </div>
+
+        <div class="d-grid gap-2">
+          <button type="submit" class="btn btn-success btn-lg" [disabled]="materiaForm.invalid">
+            <i class="bi bi-check-circle me-1"></i>
+            {{ isEdit ? 'Actualizar' : 'Registrar' }}
+          </button>
+        </div>
+
+      </form>
+    </div>
+  </div>
+</div>

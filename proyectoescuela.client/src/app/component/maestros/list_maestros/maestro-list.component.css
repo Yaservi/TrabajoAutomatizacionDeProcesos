@@ -1,0 +1,78 @@
+.maestros-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: #fff;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 4px 24px rgba(30, 64, 175, 0.10);
+  font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
+  margin-bottom: 1.5rem;
+}
+
+  .maestros-table th, .maestros-table td {
+    padding: 1rem 1.2rem;
+    text-align: left;
+    font-size: 1.05rem;
+  }
+
+  .maestros-table th {
+    background: linear-gradient(90deg, #2563eb 0%, #1e40af 100%);
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    border-bottom: 2px solid #e5e7eb;
+  }
+
+  .maestros-table tr {
+    transition: background 0.2s;
+  }
+
+  .maestros-table tbody tr:hover {
+    background: #f1f5fd;
+  }
+
+  .maestros-table td {
+    border-bottom: 1px solid #e5e7eb;
+    color: #334155;
+  }
+
+  .maestros-table tr:last-child td {
+    border-bottom: none;
+  }
+
+.sin-maestros {
+  text-align: center;
+  color: #64748b;
+  font-style: italic;
+  padding: 2rem 0;
+  font-size: 1.1rem;
+}
+
+.btn-accion {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  margin: 0 0.2rem;
+  transition: color 0.2s, transform 0.2s;
+  vertical-align: middle;
+}
+
+  .btn-accion.editar {
+    color: #f59e42;
+  }
+
+  .btn-accion.borrar {
+    color: #ef4444;
+  }
+
+  .btn-accion.editar:hover {
+    color: #d97706;
+    transform: scale(1.15);
+  }
+
+  .btn-accion.borrar:hover {
+    color: #b91c1c;
+    transform: scale(1.15);
+  }

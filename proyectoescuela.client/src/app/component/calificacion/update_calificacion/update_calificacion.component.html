@@ -1,0 +1,69 @@
+
+
+<h3>Actualizar Calificaciones</h3>
+
+
+<form [formGroup]="calificacionForm" (ngSubmit)="actualizarCalificacion()">
+
+  <div class="form-row">
+    <label for="idAlumno">Alumno</label>
+    <select id="idAlumno" formControlName="idAlumno" required>
+      <option value="">Seleccione un alumno</option>
+      <option *ngFor="let alumno of alumnos" [value]="alumno.id">
+        {{ alumno.nombre }} {{ alumno.apellido }}
+      </option>
+    </select>
+  </div>
+
+  <div class="form-row">
+    <label for="idMateria">Materia</label>
+    <select id="idMateria" formControlName="idMateria" required>
+      <option value="">Seleccione una materia</option>
+      <option *ngFor="let materia of materias" [value]="materia.id">
+        {{ materia.nombreMateria }}
+      </option>
+    </select>
+  </div>
+
+  <div class="form-row">
+    <label for="participacion">Participación</label>
+    <input id="participacion" type="number" formControlName="participacion" min="0" max="100" required>
+  </div>
+
+  <div class="form-row">
+    <label for="primerParcial">Primer Parcial</label>
+    <input id="primerParcial" type="number" formControlName="primerParcial" min="0" max="100" required>
+  </div>
+
+  <div class="form-row">
+    <label for="segundoParcial">Segundo Parcial</label>
+    <input id="segundoParcial" type="number" formControlName="segundoParcial" min="0" max="100" required>
+  </div>
+
+
+
+  <div class="form-row">
+    <label for="trabajoInvestigacion">Trabajo Investigación</label>
+    <input id="trabajoInvestigacion" type="number" formControlName="trabajoInvestigacion" min="0" max="100" required>
+  </div>
+
+  <div class="form-row">
+    <label for="trabajoFinal">Trabajo Final</label>
+    <input id="trabajoFinal" type="number" formControlName="trabajoFinal" min="0" max="100" required>
+  </div>
+
+  <div class="form-row">
+    <label for="examenFinal">Examen Final</label>
+    <input id="examenFinal" type="number" formControlName="examenFinal" min="0" max="100" required>
+  </div>
+
+  <div class="form-row">
+    <label for="nota">Nota Final</label>
+    <input id="nota" type="number" formControlName="nota">
+  </div>
+
+  <div class="form-row buttons-row">
+    <button type="submit" [disabled]="!calificacionForm.valid">Actualizar Calificación</button>
+    <!--<button type="button" (click)="cancelar()">Cancelar</button>-->
+  </div>
+</form>

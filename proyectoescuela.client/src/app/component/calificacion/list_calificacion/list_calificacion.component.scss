@@ -1,0 +1,118 @@
+
+
+.calificaciones-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(30, 64, 175, 0.10);
+  font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
+  overflow-x: auto; // previene que se oculten columnas en pantallas pequeñas
+}
+
+h3 {
+  color: #1e3a8a;
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.tabla-calificaciones {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  font-size: 0.95rem;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.05);
+}
+
+.tabla-calificaciones th,
+.tabla-calificaciones td {
+  padding: 0.8rem 1rem;
+  text-align: center;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.tabla-calificaciones th {
+  background: linear-gradient(90deg, #2563eb 0%, #1e40af 100%);
+  color: white;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.tabla-calificaciones tbody tr:hover {
+  background-color: #f1f5fd;
+}
+
+.tabla-calificaciones td {
+  color: #334155;
+}
+
+.btn-accion {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  margin: 0 0.2rem;
+  transition: transform 0.2s ease;
+}
+
+.btn-accion.editar {
+  color: #f59e0b;
+}
+
+.btn-accion.editar:hover {
+  transform: scale(1.2);
+  color: #d97706;
+}
+
+.btn-accion.borrar {
+  color: #ef4444;
+}
+
+.btn-accion.borrar:hover {
+  transform: scale(1.2);
+  color: #b91c1c;
+}
+
+.cargando-texto {
+  text-align: center;
+  font-style: italic;
+  color: #64748b;
+  margin-top: 1rem;
+}
+
+
+.leyenda-nota {
+  font-size: 0.85rem;
+  color: #444;
+  font-style: italic;
+  white-space: nowrap;
+}
+
+
+/* Input de búsqueda */
+.busqueda-calificacion {
+  margin-bottom: 1rem;
+  text-align: right;
+
+  input {
+    padding: 0.5rem 1rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    width: 100%;
+    max-width: 300px;
+    transition: border-color 0.2s;
+
+    &:focus {
+      outline: none;
+      border-color: #3b82f6;
+      box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+    }
+  }
+}

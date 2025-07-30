@@ -1,0 +1,6 @@
+C:\Users\yass\source\repos\ProyectoEscuela\proyectoescuela.client\obj\Debug\proyectoescuela.client.esproj.CoreCompileInputs.cache
+C:\Users\josea\OneDrive\Desktop\Clone\Automatizacion\TrabajoAutomatizacionDeProcesos\proyectoescuela.client\obj\Debug\proyectoescuela.client.esproj.CoreCompileInputs.cache
+C:\Users\yass\Desktop\proyectoescuela\TrabajoAutomatizacionDeProcesos\proyectoescuela.client\obj\Debug\proyectoescuela.client.esproj.CoreCompileInputs.cache
+C:\Users\HP\Documents\Origial\TrabajoAutomatizacionDeProcesos-dev\proyectoescuela.client\obj\Debug\proyectoescuela.client.esproj.CoreCompileInputs.cache
+C:\Users\HP\Documents\TrabajoAutomatizacionDeProcesos-dev\proyectoescuela.client\obj\Debug\proyectoescuela.client.esproj.CoreCompileInputs.cache
+C:\Users\yass\Desktop\proyectoescuela\TrabajoAutomatizacionDeProcesos-dev\proyectoescuela.client\obj\Debug\proyectoescuela.client.esproj.CoreCompileInputs.cache

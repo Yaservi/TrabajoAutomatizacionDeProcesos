@@ -1,0 +1,53 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\yass\\Desktop\\proyectoescuela\\TrabajoAutomatizacionDeProcesos-dev\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D6760363-2ACE-4D9B-B271-55EB6F5D9681}|ProyectoEscuela.Server\\ProyectoEscuela.Server.csproj|c:\\users\\yass\\desktop\\proyectoescuela\\trabajoautomatizaciondeprocesos-dev\\proyectoescuela.server\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{D6760363-2ACE-4D9B-B271-55EB6F5D9681}|ProyectoEscuela.Server\\ProyectoEscuela.Server.csproj|solutionrelative:proyectoescuela.server\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6760363-2ACE-4D9B-B271-55EB6F5D9681}|ProyectoEscuela.Server\\ProyectoEscuela.Server.csproj|c:\\users\\yass\\desktop\\proyectoescuela\\trabajoautomatizaciondeprocesos-dev\\proyectoescuela.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6760363-2ACE-4D9B-B271-55EB6F5D9681}|ProyectoEscuela.Server\\ProyectoEscuela.Server.csproj|solutionrelative:proyectoescuela.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\yass\\Desktop\\proyectoescuela\\TrabajoAutomatizacionDeProcesos-dev\\ProyectoEscuela.Server\\appsettings.json",
+              "RelativeDocumentMoniker": "ProyectoEscuela.Server\\appsettings.json",
+              "ToolTip": "C:\\Users\\yass\\Desktop\\proyectoescuela\\TrabajoAutomatizacionDeProcesos-dev\\ProyectoEscuela.Server\\appsettings.json",
+              "RelativeToolTip": "ProyectoEscuela.Server\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAACNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-07-30T00:47:53.481Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\yass\\Desktop\\proyectoescuela\\TrabajoAutomatizacionDeProcesos-dev\\ProyectoEscuela.Server\\Program.cs",
+              "RelativeDocumentMoniker": "ProyectoEscuela.Server\\Program.cs",
+              "ToolTip": "C:\\Users\\yass\\Desktop\\proyectoescuela\\TrabajoAutomatizacionDeProcesos-dev\\ProyectoEscuela.Server\\Program.cs",
+              "RelativeToolTip": "ProyectoEscuela.Server\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-30T00:47:49.916Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

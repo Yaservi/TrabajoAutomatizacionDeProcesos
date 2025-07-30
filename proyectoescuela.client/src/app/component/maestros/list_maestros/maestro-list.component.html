@@ -1,0 +1,38 @@
+<table class="maestros-table">
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Nombre</th>
+      <th>Apellido</th>
+      <th>Dirección</th>
+      <th>Fecha Nac.</th>
+      <th>Teléfono</th>
+      <th>Email</th>
+      <th>Materia</th>
+      <th class="text-center">Acciones</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngIf="maestros.length === 0">
+      <td colspan="7" class="sin-maestros">No hay maestros registrados.</td>
+    </tr>
+    <tr *ngFor="let maestro of maestros">
+      <td>{{ maestro.id }}</td>
+      <td>{{ maestro.nombre }}</td>
+      <td>{{ maestro.apellido }}</td>
+      <td>{{ maestro.direccion }}</td>
+      <td>{{ maestro.fechaNacimiento | date:'dd/MM/yyyy' }}</td>
+      <td>{{ maestro.telefono }}</td>
+      <td>{{ maestro.email }}</td>
+      <td>{{ maestro.materia }}</td>
+      <td class="text-center">
+        <button class="btn-accion editar" (click)="editarMaestroHandler(maestro)">
+          <i class="bi bi-pencil"></i>
+        </button>
+        <button class="btn-accion borrar" (click)="borrarMaestroHandler(maestro)">
+          <i class="bi bi-trash"></i>
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>

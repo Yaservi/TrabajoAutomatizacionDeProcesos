@@ -1,0 +1,63 @@
+<div *ngIf="mensaje" class="alert alert-info text-center mt-3">{{ mensaje }}</div>
+<div class="container mt-4 d-flex justify-content-center">
+  <div class="card shadow-lg" style="max-width: 500px; width: 100%;">
+    <div class="card-header text-white text-center">
+      <h3 class="mb-0">
+        <i class="bi bi-person-plus-fill me-2"></i>
+        {{ isEdit ? 'Editar Alumno' : 'Registro de Alumno' }}
+      </h3>
+    </div>
+    <div class="card-body">
+      <form [formGroup]="alumnoForm" (ngSubmit)="onSubmit()" autocomplete="off">
+        <div class="mb-3">
+          <label class="form-label"><i class="bi bi-person"></i> Nombre</label>
+          <input type="text" class="form-control" formControlName="nombre" [ngClass]="{'is-invalid': alumnoForm.get('nombre')?.invalid && alumnoForm.get('nombre')?.touched}">
+          <div *ngIf="alumnoForm.get('nombre')?.invalid && alumnoForm.get('nombre')?.touched" class="invalid-feedback">
+            El nombre es obligatorio.
+          </div>
+        </div>
+        <div class="mb-3">
+          <label class="form-label"><i class="bi bi-person"></i> Apellido</label>
+          <input type="text" class="form-control" formControlName="apellido" [ngClass]="{'is-invalid': alumnoForm.get('apellido')?.invalid && alumnoForm.get('apellido')?.touched}">
+          <div *ngIf="alumnoForm.get('apellido')?.invalid && alumnoForm.get('apellido')?.touched" class="invalid-feedback">
+            El apellido es obligatorio.
+          </div>
+        </div>
+        <div class="mb-3">
+          <label class="form-label"><i class="bi bi-person"></i> Dirección</label>
+          <input type="text" class="form-control" formControlName="direccion" [ngClass]="{'is-invalid': alumnoForm.get('direccion')?.invalid && alumnoForm.get('direccion')?.touched}">
+          <div *ngIf="alumnoForm.get('direccion')?.invalid && alumnoForm.get('direccion')?.touched" class="invalid-feedback">
+            La dirección es obligatoria.
+          </div>
+        </div>
+        <div class="mb-3">
+          <label class="form-label"><i class="bi bi-calendar"></i> Fecha de Nacimiento</label>
+          <input type="date" class="form-control" formControlName="fechaNacimiento" [ngClass]="{'is-invalid': alumnoForm.get('fechaNacimiento')?.invalid && alumnoForm.get('fechaNacimiento')?.touched}">
+          <div *ngIf="alumnoForm.get('fechaNacimiento')?.invalid && alumnoForm.get('fechaNacimiento')?.touched" class="invalid-feedback">
+            La fecha de nacimiento es obligatoria.
+          </div>
+        </div>
+        <div class="mb-3">
+          <label class="form-label"><i class="bi bi-telephone"></i> Teléfono</label>
+          <input type="text" class="form-control" formControlName="telefono" [ngClass]="{'is-invalid': alumnoForm.get('telefono')?.invalid && alumnoForm.get('telefono')?.touched}">
+          <div *ngIf="alumnoForm.get('telefono')?.invalid && alumnoForm.get('telefono')?.touched" class="invalid-feedback">
+            El teléfono es obligatorio.
+          </div>
+        </div>
+        <div class="mb-3">
+          <label class="form-label"><i class="bi bi-envelope"></i> Email</label>
+          <input type="email" class="form-control" formControlName="email" [ngClass]="{'is-invalid': alumnoForm.get('email')?.invalid && alumnoForm.get('email')?.touched}">
+          <div *ngIf="alumnoForm.get('email')?.invalid && alumnoForm.get('email')?.touched" class="invalid-feedback">
+            Ingresa un email válido.
+          </div>
+        </div>
+        <div class="d-grid gap-2">
+          <button type="submit" class="btn btn-success btn-lg" [disabled]="alumnoForm.invalid">
+            <i class="bi bi-check-circle me-1"></i>
+            {{ isEdit ? 'Actualizar' : 'Registrar' }}
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

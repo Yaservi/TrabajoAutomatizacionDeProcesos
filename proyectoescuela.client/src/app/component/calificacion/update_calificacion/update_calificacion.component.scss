@@ -1,0 +1,93 @@
+
+
+form {
+  max-width: 480px;
+  margin: 2rem auto;
+  padding: 1.5rem 2rem;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 4px 24px rgba(30, 64, 175, 0.10);
+  font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.form-row label {
+  flex: 0 0 140px;
+  font-weight: 600;
+  color: #1e40af;
+  font-size: 1rem;
+  text-align: right;
+}
+
+.form-row select,
+.form-row input[type="number"] {
+  flex: 1 1 auto;
+  padding: 0.5rem 0.8rem;
+  font-size: 1rem;
+  border: 1.8px solid #e5e7eb;
+  border-radius: 8px;
+  color: #334155;
+  font-family: inherit;
+  transition: border-color 0.3s ease;
+  min-width: 100px;
+}
+
+.form-row select:focus,
+.form-row input[type="number"]:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 6px rgba(37, 99, 235, 0.4);
+}
+
+/* Botones en fila con espacio entre ellos */
+.buttons-row {
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.buttons-row button[type="submit"],
+.buttons-row button[type="button"] {
+  padding: 0.6rem 1.2rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  min-width: 140px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.buttons-row button[type="submit"] {
+  background-color: #2563eb;
+  color: white;
+}
+
+.buttons-row button[type="submit"]:hover:not(:disabled) {
+  background-color: #1e40af;
+  transform: scale(1.05);
+}
+
+.buttons-row button[type="submit"]:disabled {
+  background-color: #a5b4fc;
+  cursor: not-allowed;
+}
+
+.buttons-row button[type="button"] {
+  background-color: #ef4444;
+  color: white;
+}
+
+.buttons-row button[type="button"]:hover {
+  background-color: #b91c1c;
+  transform: scale(1.05);
+}

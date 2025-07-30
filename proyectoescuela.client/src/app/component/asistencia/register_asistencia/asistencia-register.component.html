@@ -1,0 +1,65 @@
+<div *ngIf="mensaje" class="alert alert-info text-center mt-3">{{ mensaje }}</div>
+
+<div class="container mt-4 d-flex justify-content-center">
+  <div class="card shadow-lg" style="max-width: 500px; width: 100%;">
+    <div class="card-header text-white text-center">
+      <h3 class="mb-0">
+        <i class="bi bi-calendar-check me-2"></i>
+        {{ isEdit ? 'Editar Asistencia' : 'Registro de Asistencia' }}
+      </h3>
+    </div>
+    <div class="card-body">
+      <form [formGroup]="asistenciaForm" (ngSubmit)="onSubmit()" autocomplete="off">
+        <div class="mb-3">
+          <label class="form-label"><i class="bi bi-toggle-on"></i> Estado</label>
+          <select class="form-select" formControlName="estado" [ngClass]="{'is-invalid': asistenciaForm.get('estado')?.invalid && asistenciaForm.get('estado')?.touched}">
+            <option value="">Seleccione el estado</option>
+            <option value="Presente">Presente</option>
+            <option value="Ausente">Ausente</option>
+            <option value="Justificado">Justificado</option>
+          </select>
+          <div *ngIf="asistenciaForm.get('estado')?.invalid && asistenciaForm.get('estado')?.touched" class="invalid-feedback">
+            El estado es obligatorio.
+          </div>
+        </div>
+        <div class="mb-3">
+          <label class="form-label"><i class="bi bi-calendar-event"></i> Fecha de Asistencia</label>
+          <input type="date" class="form-control" formControlName="fechaAsistencia" [ngClass]="{'is-invalid': asistenciaForm.get('fechaAsistencia')?.invalid && asistenciaForm.get('fechaAsistencia')?.touched}">
+          <div *ngIf="asistenciaForm.get('fechaAsistencia')?.invalid && asistenciaForm.get('fechaAsistencia')?.touched" class="invalid-feedback">
+            La fecha de asistencia es obligatoria.
+          </div>
+        </div>
+        <div class="mb-3">
+          <label class="form-label"><i class="bi bi-person"></i> Alumno</label>
+          <select class="form-select" formControlName="alumnoId" [ngClass]="{'is-invalid': asistenciaForm.get('alumnoId')?.invalid && asistenciaForm.get('alumnoId')?.touched}">
+            <option value="">Seleccione un alumno</option>
+            <option *ngFor="let alumno of alumnos" [value]="alumno.id">
+              {{ alumno.nombre }} {{ alumno.apellido }}
+            </option>
+          </select>
+          <div *ngIf="asistenciaForm.get('alumnoId')?.invalid && asistenciaForm.get('alumnoId')?.touched" class="invalid-feedback">
+            El alumno es obligatorio.
+          </div>
+        </div>
+        <div class="mb-3">
+          <label class="form-label"><i class="bi bi-book"></i> Materia</label>
+          <select class="form-select" formControlName="materiaId" [ngClass]="{'is-invalid': asistenciaForm.get('materiaId')?.invalid && asistenciaForm.get('materiaId')?.touched}">
+            <option value="">Seleccione una materia</option>
+            <option *ngFor="let materia of materias" [value]="materia.id">
+              {{ materia.nombreMateria }}
+            </option>
+          </select>
+          <div *ngIf="asistenciaForm.get('materiaId')?.invalid && asistenciaForm.get('materiaId')?.touched" class="invalid-feedback">
+            La materia es obligatoria.
+          </div>
+        </div>
+        <div class="d-grid gap-2">
+          <button type="submit" class="btn btn-success btn-lg" [disabled]="asistenciaForm.invalid">
+            <i class="bi bi-check-circle me-1"></i>
+            {{ isEdit ? 'Actualizar' : 'Registrar' }}
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

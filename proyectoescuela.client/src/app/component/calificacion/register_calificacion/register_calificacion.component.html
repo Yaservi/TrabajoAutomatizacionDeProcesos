@@ -1,0 +1,76 @@
+
+<h3>Nueva Calificaciones</h3>
+
+<form [formGroup]="calificacionForm" (ngSubmit)="registrarCalificacion()" novalidate>
+  <!-- Select Alumno -->
+  <label for="idAlumno">Alumno</label>
+  <select id="idAlumno" formControlName="idAlumno" required>
+    <option value="" disabled selected>Seleccione un alumno</option>
+    <option *ngFor="let alumno of alumnos" [value]="alumno.id">
+      {{ alumno.nombre }} {{ alumno.apellido }}
+    </option>
+  </select>
+  <div *ngIf="calificacionForm.get('idAlumno')?.invalid && (calificacionForm.get('idAlumno')?.touched || calificacionForm.get('idAlumno')?.dirty)" class="error">
+    Por favor selecciona un alumno.
+  </div>
+
+  <!-- Select Materia -->
+  <label for="idMateria">Materia</label>
+  <select id="idMateria" formControlName="idMateria" required>
+    <option value="" disabled selected>Seleccione una materia</option>
+    <option *ngFor="let materia of materias" [value]="materia.id">
+      {{ materia.nombreMateria }}
+    </option>
+  </select>
+  <div *ngIf="calificacionForm.get('idMateria')?.invalid && (calificacionForm.get('idMateria')?.touched || calificacionForm.get('idMateria')?.dirty)" class="error">
+    Por favor selecciona una materia.
+  </div>
+
+  <!-- Inputs para notas -->
+  <label for="participacion">Participación</label>
+  <input id="participacion" type="number" formControlName="participacion" min="0" max="100" required>
+  <div *ngIf="calificacionForm.get('participacion')?.invalid && (calificacionForm.get('participacion')?.touched || calificacionForm.get('participacion')?.dirty)" class="error">
+    Valor entre 0 y 100 requerido.
+  </div>
+
+  <label for="primerParcial">Primer Parcial</label>
+  <input id="primerParcial" type="number" formControlName="primerParcial" min="0" max="100" required>
+  <div *ngIf="calificacionForm.get('primerParcial')?.invalid && (calificacionForm.get('primerParcial')?.touched || calificacionForm.get('primerParcial')?.dirty)" class="error">
+    Valor entre 0 y 100 requerido.
+  </div>
+
+  <label for="segundoParcial">Segundo Parcial</label>
+  <input id="segundoParcial" type="number" formControlName="segundoParcial" min="0" max="100" required>
+  <div *ngIf="calificacionForm.get('segundoParcial')?.invalid && (calificacionForm.get('segundoParcial')?.touched || calificacionForm.get('segundoParcial')?.dirty)" class="error">
+    Valor entre 0 y 100 requerido.
+  </div>
+
+
+
+  <label for="trabajoInvestigacion">Trabajo Investigación</label>
+  <input id="trabajoInvestigacion" type="number" formControlName="trabajoInvestigacion" min="0" max="100" required>
+  <div *ngIf="calificacionForm.get('trabajoInvestigacion')?.invalid && (calificacionForm.get('trabajoInvestigacion')?.touched || calificacionForm.get('trabajoInvestigacion')?.dirty)" class="error">
+    Valor entre 0 y 100 requerido.
+  </div>
+
+  <label for="trabajoFinal">Trabajo Final</label>
+  <input id="trabajoFinal" type="number" formControlName="trabajoFinal" min="0" max="100" required>
+  <div *ngIf="calificacionForm.get('trabajoFinal')?.invalid && (calificacionForm.get('trabajoFinal')?.touched || calificacionForm.get('trabajoFinal')?.dirty)" class="error">
+    Valor entre 0 y 100 requerido.
+  </div>
+
+  <label for="examenFinal">Examen Final</label>
+  <input id="examenFinal" type="number" formControlName="examenFinal" min="0" max="100" required>
+  <div *ngIf="calificacionForm.get('examenFinal')?.invalid && (calificacionForm.get('examenFinal')?.touched || calificacionForm.get('examenFinal')?.dirty)" class="error">
+    Valor entre 0 y 100 requerido.
+  </div>
+
+  <!-- Nota Final calculada -->
+  <label for="nota">Nota Final</label>
+  <!--<input id="nota" type="number" formControlName="nota" disabled>-->
+  <input id="nota" type="number" formControlName="nota" [disabled]="true">
+
+
+  <!-- Botones -->
+  <button type="submit" [disabled]="calificacionForm.invalid">Registrar Calificación</button>
+</form>

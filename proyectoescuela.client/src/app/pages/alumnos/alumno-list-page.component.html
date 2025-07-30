@@ -1,0 +1,23 @@
+<div class="alumnos-page-container">
+  <div class="alumnos-header">
+    <h2>Alumnos Registrados</h2>
+    <button class="btn-agregar" (click)="mostrarModal = true">
+      <i class="bi bi-person-plus"></i> Agregar Alumno
+    </button>
+  </div>
+
+  <div class="alumnos-table-container">
+    <app-alumno-list [alumnos]="alumnos"
+                     (editarAlumno)="editarAlumno($event)"
+                     (borrarAlumno)="borrarAlumno($event)">
+    </app-alumno-list>
+  </div>
+
+  <div class="modal-backdrop" *ngIf="mostrarModal" (click)="cerrarModal()"></div>
+  <div class="modal" *ngIf="mostrarModal">
+    <div class="modal-content" (click)="$event.stopPropagation()">
+      <button class="modal-close" (click)="cerrarModal()">&times;</button>
+      <app-alumno-register [alumno]="alumnoAEditar" (submitted)="cerrarModal()"></app-alumno-register>
+    </div>
+  </div>
+</div>

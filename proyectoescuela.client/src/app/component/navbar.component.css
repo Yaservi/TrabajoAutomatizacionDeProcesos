@@ -1,0 +1,95 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(90deg, #2563eb 0%, #1e40af 100%);
+  padding: 0.75rem 2.5rem;
+  box-shadow: 0 4px 24px rgba(30, 64, 175, 0.10);
+  border-radius: 0 0 18px 18px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
+}
+
+.navbar-brand {
+  color: #fff;
+  font-size: 1.7rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  user-select: none;
+}
+
+.brand-icon {
+  font-size: 2rem;
+  filter: drop-shadow(0 2px 2px rgba(0,0,0,0.10));
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.08rem;
+  padding: 0.5rem 1.1rem;
+  border-radius: 6px;
+  position: relative;
+  transition: color 0.2s, background 0.2s;
+  font-weight: 500;
+  overflow: hidden;
+}
+
+.nav-link::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 20%;
+  right: 20%;
+  bottom: 7px;
+  height: 2px;
+  background: #fff;
+  border-radius: 2px;
+  transform: scaleX(0);
+  transition: transform 0.3s cubic-bezier(.4,0,.2,1);
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: #2563eb;
+  background: #fff;
+}
+
+.nav-link:hover::after,
+.nav-link:focus::after {
+  transform: scaleX(1);
+  background: #2563eb;
+}
+
+.nav-button {
+  background: #fff;
+  color: #2563eb;
+  font-weight: 600;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(37,99,235,0.10);
+  margin-left: 1.5rem;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  border: 1.5px solid #2563eb;
+}
+
+.nav-button:hover,
+.nav-button:focus {
+  background: #2563eb;
+  color: #fff;
+  box-shadow: 0 4px 16px rgba(37,99,235,0.18);
+  border-color: #1e40af;
+}

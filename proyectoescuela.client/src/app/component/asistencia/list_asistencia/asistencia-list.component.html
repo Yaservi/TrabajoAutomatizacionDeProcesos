@@ -1,0 +1,32 @@
+<table class="asistencia-table">
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Estado</th>
+      <th>Fecha Asistencia</th>
+      <th>Alumno</th>
+      <th>Materia</th>
+      <th class="text-center">Acciones</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngIf="asistencias.length === 0">
+      <td colspan="6" class="sin-asistencia">No hay asistencias registradas.</td>
+    </tr>
+    <tr *ngFor="let asistencia of asistencias">
+      <td>{{ asistencia.id }}</td>
+      <td>{{ asistencia.estado }}</td>
+      <td>{{ asistencia.fechaAsistencia | date:'dd/MM/yyyy' }}</td>
+      <td>{{ asistencia.alumno?.nombre }} {{ asistencia.alumno?.apellido }}</td>
+      <td>{{ asistencia.materia?.nombreMateria }}</td>
+      <td class="text-center">
+        <button class="btn-accion editar" (click)="editarAsistenciaHandler(asistencia)">
+          <i class="bi bi-pencil"></i>
+        </button>
+        <button class="btn-accion borrar" (click)="borrarAsistenciaHandler(asistencia)">
+          <i class="bi bi-trash"></i>
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>

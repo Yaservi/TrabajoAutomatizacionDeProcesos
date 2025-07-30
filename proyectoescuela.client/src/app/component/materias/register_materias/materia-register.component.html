@@ -1,0 +1,53 @@
+<div class="materia-register-container">
+  <h3>{{ isEdit ? 'Editar Materia' : 'Registrar Nueva Materia' }}</h3>
+
+  <form [formGroup]="materiaForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="nombreMateria">Nombre de la Materia</label>
+      <input
+        type="text"
+        id="nombreMateria"
+        formControlName="nombreMateria"
+        placeholder="Ingrese el nombre de la materia"
+        required
+      >
+      <div class="error-message" *ngIf="materiaForm.get('nombreMateria')?.invalid && materiaForm.get('nombreMateria')?.touched">
+        El nombre de la materia es requerido
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="descripcion">Descripción</label>
+      <textarea
+        id="descripcion"
+        formControlName="descripcion"
+        placeholder="Ingrese una descripción de la materia"
+        required
+      ></textarea>
+      <div class="error-message" *ngIf="materiaForm.get('descripcion')?.invalid && materiaForm.get('descripcion')?.touched">
+        La descripción es requerida
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="maestroId">Maestro</label>
+      <select id="maestroId" formControlName="maestroId" required>
+        <option value="">Seleccione un maestro</option>
+        <option *ngFor="let maestro of maestros" [value]="maestro.id">
+          {{ maestro.nombre }} {{ maestro.apellido }}
+        </option>
+      </select>
+      <div class="error-message" *ngIf="materiaForm.get('maestroId')?.invalid && materiaForm.get('maestroId')?.touched">
+        Debe seleccionar un maestro
+      </div>
+    </div>
+
+    <div class="form-actions">
+      <button type="submit" [disabled]="materiaForm.invalid" class="btn-submit">
+        {{ isEdit ? 'Actualizar' : 'Registrar' }}
+      </button>
+    </div>
+  </form>
+
+  <div class="message" *ngIf="mensaje">{{ mensaje }}</div>
+</div>
