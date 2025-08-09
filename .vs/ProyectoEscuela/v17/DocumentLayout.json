@@ -47,34 +47,6 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:proyectoescuela.client\\src\\app\\component\\Home\\Home.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{633BA605-38D3-531C-02B1-B3192F38449D}|proyectoescuela.client\\proyectoescuela.client.esproj|c:\\users\\yass\\desktop\\proyectoescuela\\trabajoautomatizaciondeprocesos-dev\\proyectoescuela.client\\src\\app\\component\\alumno-list.component.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{633BA605-38D3-531C-02B1-B3192F38449D}|proyectoescuela.client\\proyectoescuela.client.esproj|solutionrelative:proyectoescuela.client\\src\\app\\component\\alumno-list.component.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{633BA605-38D3-531C-02B1-B3192F38449D}|proyectoescuela.client\\proyectoescuela.client.esproj|c:\\users\\yass\\desktop\\proyectoescuela\\trabajoautomatizaciondeprocesos-dev\\proyectoescuela.client\\src\\app\\component\\alumno-list.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{633BA605-38D3-531C-02B1-B3192F38449D}|proyectoescuela.client\\proyectoescuela.client.esproj|solutionrelative:proyectoescuela.client\\src\\app\\component\\alumno-list.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{633BA605-38D3-531C-02B1-B3192F38449D}|proyectoescuela.client\\proyectoescuela.client.esproj|c:\\users\\yass\\desktop\\proyectoescuela\\trabajoautomatizaciondeprocesos-dev\\proyectoescuela.client\\src\\app\\component\\alumno-list.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{633BA605-38D3-531C-02B1-B3192F38449D}|proyectoescuela.client\\proyectoescuela.client.esproj|solutionrelative:proyectoescuela.client\\src\\app\\component\\alumno-list.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{633BA605-38D3-531C-02B1-B3192F38449D}|proyectoescuela.client\\proyectoescuela.client.esproj|c:\\users\\yass\\desktop\\proyectoescuela\\trabajoautomatizaciondeprocesos-dev\\proyectoescuela.client\\src\\app\\component\\alumno-register.component.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{633BA605-38D3-531C-02B1-B3192F38449D}|proyectoescuela.client\\proyectoescuela.client.esproj|solutionrelative:proyectoescuela.client\\src\\app\\component\\alumno-register.component.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{633BA605-38D3-531C-02B1-B3192F38449D}|proyectoescuela.client\\proyectoescuela.client.esproj|c:\\users\\yass\\desktop\\proyectoescuela\\trabajoautomatizaciondeprocesos-dev\\proyectoescuela.client\\src\\app\\component\\alumno-register.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{633BA605-38D3-531C-02B1-B3192F38449D}|proyectoescuela.client\\proyectoescuela.client.esproj|solutionrelative:proyectoescuela.client\\src\\app\\component\\alumno-register.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{633BA605-38D3-531C-02B1-B3192F38449D}|proyectoescuela.client\\proyectoescuela.client.esproj|c:\\users\\yass\\desktop\\proyectoescuela\\trabajoautomatizaciondeprocesos-dev\\proyectoescuela.client\\src\\app\\component\\alumno-register.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{633BA605-38D3-531C-02B1-B3192F38449D}|proyectoescuela.client\\proyectoescuela.client.esproj|solutionrelative:proyectoescuela.client\\src\\app\\component\\alumno-register.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{633BA605-38D3-531C-02B1-B3192F38449D}|proyectoescuela.client\\proyectoescuela.client.esproj|c:\\users\\yass\\desktop\\proyectoescuela\\trabajoautomatizaciondeprocesos-dev\\proyectoescuela.client\\src\\app\\component\\maestro-register.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{633BA605-38D3-531C-02B1-B3192F38449D}|proyectoescuela.client\\proyectoescuela.client.esproj|solutionrelative:proyectoescuela.client\\src\\app\\component\\maestro-register.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D6760363-2ACE-4D9B-B271-55EB6F5D9681}|ProyectoEscuela.Server\\ProyectoEscuela.Server.csproj|c:\\users\\yass\\desktop\\proyectoescuela\\trabajoautomatizaciondeprocesos-dev\\proyectoescuela.server\\validations\\asistencia\\asistenciaupdatedtovalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D6760363-2ACE-4D9B-B271-55EB6F5D9681}|ProyectoEscuela.Server\\ProyectoEscuela.Server.csproj|solutionrelative:proyectoescuela.server\\validations\\asistencia\\asistenciaupdatedtovalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -147,19 +119,6 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "asistencia-list.component.ts",
-              "DocumentMoniker": "C:\\Users\\yass\\Desktop\\proyectoescuela\\TrabajoAutomatizacionDeProcesos-dev\\proyectoescuela.client\\src\\app\\component\\asistencia\\list_asistencia\\asistencia-list.component.ts",
-              "RelativeDocumentMoniker": "proyectoescuela.client\\src\\app\\component\\asistencia\\list_asistencia\\asistencia-list.component.ts",
-              "ToolTip": "C:\\Users\\yass\\Desktop\\proyectoescuela\\TrabajoAutomatizacionDeProcesos-dev\\proyectoescuela.client\\src\\app\\component\\asistencia\\list_asistencia\\asistencia-list.component.ts",
-              "RelativeToolTip": "proyectoescuela.client\\src\\app\\component\\asistencia\\list_asistencia\\asistencia-list.component.ts",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2025-08-09T03:06:44.449Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 4,
               "Title": "alumno-list.component.ts",
               "DocumentMoniker": "C:\\Users\\yass\\Desktop\\proyectoescuela\\TrabajoAutomatizacionDeProcesos-dev\\proyectoescuela.client\\src\\app\\component\\alumnos\\list_alumnos\\alumno-list.component.ts",
@@ -168,8 +127,7 @@
               "RelativeToolTip": "proyectoescuela.client\\src\\app\\component\\alumnos\\list_alumnos\\alumno-list.component.ts",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2025-08-09T03:06:27.553Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-09T03:06:27.553Z"
             },
             {
               "$type": "Document",
@@ -181,8 +139,7 @@
               "RelativeToolTip": "proyectoescuela.client\\src\\app\\app.module.ts",
               "ViewState": "AgIAABIAAAAAAAAAAAAAACIAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2025-08-09T02:48:39.748Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-09T02:48:39.748Z"
             },
             {
               "$type": "Document",
@@ -194,8 +151,19 @@
               "RelativeToolTip": "proyectoescuela.client\\src\\app\\app-routing.module.ts",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAsAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2025-08-09T02:35:34.065Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-09T02:35:34.065Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "asistencia-list.component.ts",
+              "DocumentMoniker": "C:\\Users\\yass\\Desktop\\proyectoescuela\\TrabajoAutomatizacionDeProcesos-dev\\proyectoescuela.client\\src\\app\\component\\asistencia\\list_asistencia\\asistencia-list.component.ts",
+              "RelativeDocumentMoniker": "proyectoescuela.client\\src\\app\\component\\asistencia\\list_asistencia\\asistencia-list.component.ts",
+              "ToolTip": "C:\\Users\\yass\\Desktop\\proyectoescuela\\TrabajoAutomatizacionDeProcesos-dev\\proyectoescuela.client\\src\\app\\component\\asistencia\\list_asistencia\\asistencia-list.component.ts",
+              "RelativeToolTip": "proyectoescuela.client\\src\\app\\component\\asistencia\\list_asistencia\\asistencia-list.component.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-08-09T03:06:44.449Z"
             },
             {
               "$type": "Document",
@@ -272,90 +240,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 11,
-              "Title": "alumno-list.component.css",
-              "DocumentMoniker": "C:\\Users\\yass\\Desktop\\proyectoescuela\\TrabajoAutomatizacionDeProcesos-dev\\proyectoescuela.client\\src\\app\\component\\alumno-list.component.css",
-              "RelativeDocumentMoniker": "proyectoescuela.client\\src\\app\\component\\alumno-list.component.css",
-              "ToolTip": "C:\\Users\\yass\\Desktop\\proyectoescuela\\TrabajoAutomatizacionDeProcesos-dev\\proyectoescuela.client\\src\\app\\component\\alumno-list.component.css",
-              "RelativeToolTip": "proyectoescuela.client\\src\\app\\component\\alumno-list.component.css",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-08-09T02:31:14.06Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "alumno-list.component.html",
-              "DocumentMoniker": "C:\\Users\\yass\\Desktop\\proyectoescuela\\TrabajoAutomatizacionDeProcesos-dev\\proyectoescuela.client\\src\\app\\component\\alumno-list.component.html",
-              "RelativeDocumentMoniker": "proyectoescuela.client\\src\\app\\component\\alumno-list.component.html",
-              "ToolTip": "C:\\Users\\yass\\Desktop\\proyectoescuela\\TrabajoAutomatizacionDeProcesos-dev\\proyectoescuela.client\\src\\app\\component\\alumno-list.component.html",
-              "RelativeToolTip": "proyectoescuela.client\\src\\app\\component\\alumno-list.component.html",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-08-09T02:31:13.174Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "alumno-list.component.ts",
-              "DocumentMoniker": "C:\\Users\\yass\\Desktop\\proyectoescuela\\TrabajoAutomatizacionDeProcesos-dev\\proyectoescuela.client\\src\\app\\component\\alumno-list.component.ts",
-              "RelativeDocumentMoniker": "proyectoescuela.client\\src\\app\\component\\alumno-list.component.ts",
-              "ToolTip": "C:\\Users\\yass\\Desktop\\proyectoescuela\\TrabajoAutomatizacionDeProcesos-dev\\proyectoescuela.client\\src\\app\\component\\alumno-list.component.ts",
-              "RelativeToolTip": "proyectoescuela.client\\src\\app\\component\\alumno-list.component.ts",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2025-08-09T02:31:12.098Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "alumno-register.component.css",
-              "DocumentMoniker": "C:\\Users\\yass\\Desktop\\proyectoescuela\\TrabajoAutomatizacionDeProcesos-dev\\proyectoescuela.client\\src\\app\\component\\alumno-register.component.css",
-              "RelativeDocumentMoniker": "proyectoescuela.client\\src\\app\\component\\alumno-register.component.css",
-              "ToolTip": "C:\\Users\\yass\\Desktop\\proyectoescuela\\TrabajoAutomatizacionDeProcesos-dev\\proyectoescuela.client\\src\\app\\component\\alumno-register.component.css",
-              "RelativeToolTip": "proyectoescuela.client\\src\\app\\component\\alumno-register.component.css",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-08-09T02:31:11.038Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "alumno-register.component.html",
-              "DocumentMoniker": "C:\\Users\\yass\\Desktop\\proyectoescuela\\TrabajoAutomatizacionDeProcesos-dev\\proyectoescuela.client\\src\\app\\component\\alumno-register.component.html",
-              "RelativeDocumentMoniker": "proyectoescuela.client\\src\\app\\component\\alumno-register.component.html",
-              "ToolTip": "C:\\Users\\yass\\Desktop\\proyectoescuela\\TrabajoAutomatizacionDeProcesos-dev\\proyectoescuela.client\\src\\app\\component\\alumno-register.component.html",
-              "RelativeToolTip": "proyectoescuela.client\\src\\app\\component\\alumno-register.component.html",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-08-09T02:31:08.691Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "maestro-register.component.ts",
-              "DocumentMoniker": "C:\\Users\\yass\\Desktop\\proyectoescuela\\TrabajoAutomatizacionDeProcesos-dev\\proyectoescuela.client\\src\\app\\component\\maestro-register.component.ts",
-              "RelativeDocumentMoniker": "proyectoescuela.client\\src\\app\\component\\maestro-register.component.ts",
-              "ToolTip": "C:\\Users\\yass\\Desktop\\proyectoescuela\\TrabajoAutomatizacionDeProcesos-dev\\proyectoescuela.client\\src\\app\\component\\maestro-register.component.ts",
-              "RelativeToolTip": "proyectoescuela.client\\src\\app\\component\\maestro-register.component.ts",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2025-08-09T02:30:55.024Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "alumno-register.component.ts",
-              "DocumentMoniker": "C:\\Users\\yass\\Desktop\\proyectoescuela\\TrabajoAutomatizacionDeProcesos-dev\\proyectoescuela.client\\src\\app\\component\\alumno-register.component.ts",
-              "RelativeDocumentMoniker": "proyectoescuela.client\\src\\app\\component\\alumno-register.component.ts",
-              "ToolTip": "C:\\Users\\yass\\Desktop\\proyectoescuela\\TrabajoAutomatizacionDeProcesos-dev\\proyectoescuela.client\\src\\app\\component\\alumno-register.component.ts",
-              "RelativeToolTip": "proyectoescuela.client\\src\\app\\component\\alumno-register.component.ts",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2025-08-09T02:30:52.589Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
               "Title": "AsistenciaUpdateDtoValidation.cs",
               "DocumentMoniker": "C:\\Users\\yass\\Desktop\\proyectoescuela\\TrabajoAutomatizacionDeProcesos-dev\\ProyectoEscuela.Server\\Validations\\Asistencia\\AsistenciaUpdateDtoValidation.cs",
               "RelativeDocumentMoniker": "ProyectoEscuela.Server\\Validations\\Asistencia\\AsistenciaUpdateDtoValidation.cs",
@@ -367,7 +251,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 12,
               "Title": "AsistenciaInsertDtoValidation.cs",
               "DocumentMoniker": "C:\\Users\\yass\\Desktop\\proyectoescuela\\TrabajoAutomatizacionDeProcesos-dev\\ProyectoEscuela.Server\\Validations\\Asistencia\\AsistenciaInsertDtoValidation.cs",
               "RelativeDocumentMoniker": "ProyectoEscuela.Server\\Validations\\Asistencia\\AsistenciaInsertDtoValidation.cs",
@@ -379,7 +263,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 13,
               "Title": "AsistenciaUpdateDto.cs",
               "DocumentMoniker": "C:\\Users\\yass\\Desktop\\proyectoescuela\\TrabajoAutomatizacionDeProcesos-dev\\ProyectoEscuela.Server\\DTOs\\Asistencia\\AsistenciaUpdateDto.cs",
               "RelativeDocumentMoniker": "ProyectoEscuela.Server\\DTOs\\Asistencia\\AsistenciaUpdateDto.cs",
@@ -391,7 +275,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 14,
               "Title": "AsistenciaDto.cs",
               "DocumentMoniker": "C:\\Users\\yass\\Desktop\\proyectoescuela\\TrabajoAutomatizacionDeProcesos-dev\\ProyectoEscuela.Server\\DTOs\\Asistencia\\AsistenciaDto.cs",
               "RelativeDocumentMoniker": "ProyectoEscuela.Server\\DTOs\\Asistencia\\AsistenciaDto.cs",
@@ -403,7 +287,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 15,
               "Title": "Asistencias.cs",
               "DocumentMoniker": "C:\\Users\\yass\\Desktop\\proyectoescuela\\TrabajoAutomatizacionDeProcesos-dev\\ProyectoEscuela.Server\\Models\\Asistencias.cs",
               "RelativeDocumentMoniker": "ProyectoEscuela.Server\\Models\\Asistencias.cs",
@@ -415,7 +299,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 16,
               "Title": "CalificacionController.cs",
               "DocumentMoniker": "C:\\Users\\yass\\Desktop\\proyectoescuela\\TrabajoAutomatizacionDeProcesos-dev\\ProyectoEscuela.Server\\Controllers\\CalificacionController.cs",
               "RelativeDocumentMoniker": "ProyectoEscuela.Server\\Controllers\\CalificacionController.cs",
@@ -427,7 +311,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 17,
               "Title": "MateriaController.cs",
               "DocumentMoniker": "C:\\Users\\yass\\Desktop\\proyectoescuela\\TrabajoAutomatizacionDeProcesos-dev\\ProyectoEscuela.Server\\Controllers\\MateriaController.cs",
               "RelativeDocumentMoniker": "ProyectoEscuela.Server\\Controllers\\MateriaController.cs",
@@ -439,7 +323,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 18,
               "Title": "AsistenciaController.cs",
               "DocumentMoniker": "C:\\Users\\yass\\Desktop\\proyectoescuela\\TrabajoAutomatizacionDeProcesos-dev\\ProyectoEscuela.Server\\Controllers\\AsistenciaController.cs",
               "RelativeDocumentMoniker": "ProyectoEscuela.Server\\Controllers\\AsistenciaController.cs",
@@ -451,7 +335,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 20,
               "Title": "maestros-list-page.component.html",
               "DocumentMoniker": "C:\\Users\\yass\\Desktop\\proyectoescuela\\TrabajoAutomatizacionDeProcesos-dev\\proyectoescuela.client\\src\\app\\pages\\maestros\\maestros-list-page.component.html",
               "RelativeDocumentMoniker": "proyectoescuela.client\\src\\app\\pages\\maestros\\maestros-list-page.component.html",
@@ -463,7 +347,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 19,
               "Title": "maestro-list-page.component.html",
               "DocumentMoniker": "C:\\Users\\yass\\Desktop\\proyectoescuela\\TrabajoAutomatizacionDeProcesos-dev\\proyectoescuela.client\\src\\app\\pages\\maestros\\maestro-list-page.component.html",
               "RelativeDocumentMoniker": "proyectoescuela.client\\src\\app\\pages\\maestros\\maestro-list-page.component.html",
@@ -475,7 +359,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 21,
               "Title": "maestros-list-page.component.css",
               "DocumentMoniker": "C:\\Users\\yass\\Desktop\\proyectoescuela\\TrabajoAutomatizacionDeProcesos-dev\\proyectoescuela.client\\src\\app\\pages\\maestros\\maestros-list-page.component.css",
               "RelativeDocumentMoniker": "proyectoescuela.client\\src\\app\\pages\\maestros\\maestros-list-page.component.css",
@@ -487,7 +371,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 22,
               "Title": "maestros-list-page.component.ts",
               "DocumentMoniker": "C:\\Users\\yass\\Desktop\\proyectoescuela\\TrabajoAutomatizacionDeProcesos-dev\\proyectoescuela.client\\src\\app\\pages\\maestros\\maestros-list-page.component.ts",
               "RelativeDocumentMoniker": "proyectoescuela.client\\src\\app\\pages\\maestros\\maestros-list-page.component.ts",
