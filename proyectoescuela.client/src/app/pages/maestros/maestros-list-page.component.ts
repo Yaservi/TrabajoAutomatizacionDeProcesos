@@ -13,8 +13,8 @@ import { MaestroService } from '../../services/maestros/maestro-service';
 })
 export class MaestroListPageComponent {
   maestros: any[] = [];
-  mostrarModal = false;
-  maestroAEditar: any = null;
+  mostrarModal: boolean = false;
+  maestroAEditar: any | null = null;
 
   constructor(private maestroService: MaestroService) {
     this.cargarMaestros();
@@ -31,7 +31,7 @@ export class MaestroListPageComponent {
   }
 
   editarMaestro(maestro: any) {
-    this.maestroAEditar = maestro;
+    this.maestroAEditar = { ...maestro }; 
     this.mostrarModal = true;
   }
 

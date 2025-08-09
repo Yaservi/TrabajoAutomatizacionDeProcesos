@@ -62,16 +62,16 @@ namespace ProyectoEscuela.Server.Controllers
 
         [HttpPut("{id}")]
         [EnableRateLimiting("fixed")]
-        public async Task<IActionResult> UpdateMateria([FromBody] Guid id, [FromForm] MateriaUpdateDto materiaUpdateDto, CancellationToken cancellationToken)
+        public async Task<IActionResult> UpdateMateria([FromRoute] Guid id, [FromBody] MateriaUpdateDto materiaUpdateDto, CancellationToken cancellationToken)
         {
             var validationResult = await updateValidator.ValidateAsync(materiaUpdateDto, cancellationToken);
 
             if (!validationResult.IsValid)
-                return BadRequest(validationResult);
+                return BadRequest(validationResult.Errors);
             try
             {
-                var alumnoDto = await materiaService.UpdateAsync(id, materiaUpdateDto, cancellationToken);
-                return Ok(alumnoDto);
+                var materiaDto = await materiaService.UpdateAsync(id, materiaUpdateDto, cancellationToken);
+                return Ok(materiaDto);
             }
             catch (ArgumentException ex)
             {

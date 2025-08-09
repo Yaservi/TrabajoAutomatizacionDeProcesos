@@ -62,12 +62,12 @@ namespace ProyectoEscuela.Server.Controllers
 
         [HttpPut("{id}")]
         [EnableRateLimiting("fixed")]
-        public async Task<IActionResult> UpdateMaestro([FromBody] Guid id, [FromForm] MaestroUpdateDto maestroUpdateDto, CancellationToken cancellationToken)
+        public async Task<IActionResult> UpdateMaestro([FromRoute] Guid id, [FromBody] MaestroUpdateDto maestroUpdateDto, CancellationToken cancellationToken)
         {
             var validationResult = await updateValidator.ValidateAsync(maestroUpdateDto, cancellationToken);
 
             if (!validationResult.IsValid)
-                return BadRequest(validationResult);
+                return BadRequest(validationResult.Errors);
             try
             {
                 var maestroDto = await maestroService.UpdateAsync(id, maestroUpdateDto, cancellationToken);

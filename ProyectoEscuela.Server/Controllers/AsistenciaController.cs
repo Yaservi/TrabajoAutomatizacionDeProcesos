@@ -63,12 +63,12 @@ namespace ProyectoEscuela.Server.Controllers
 
         [HttpPut("{id}")]
         [EnableRateLimiting("fixed")]
-        public async Task<IActionResult> UpdateAsistencia([FromBody] Guid id, [FromForm] AsistenciaUpdateDto asistenciaUpdateDto, CancellationToken cancellationToken)
+        public async Task<IActionResult> UpdateAsistencia([FromRoute] Guid id, [FromBody] AsistenciaUpdateDto asistenciaUpdateDto, CancellationToken cancellationToken)
         {
             var validationResult = await updateValidator.ValidateAsync(asistenciaUpdateDto, cancellationToken);
 
             if (!validationResult.IsValid)
-                return BadRequest(validationResult);
+                return BadRequest(validationResult.Errors);
             try
             {
                 var asistenciaDto = await asistenciaService.UpdateAsync(id, asistenciaUpdateDto, cancellationToken);

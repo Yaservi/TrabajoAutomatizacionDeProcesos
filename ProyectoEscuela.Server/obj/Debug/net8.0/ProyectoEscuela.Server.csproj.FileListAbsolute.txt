@@ -904,3 +904,4 @@ C:\Users\yass\Desktop\proyectoescuela\TrabajoAutomatizacionDeProcesos-dev\Proyec
 C:\Users\yass\Desktop\proyectoescuela\TrabajoAutomatizacionDeProcesos-dev\ProyectoEscuela.Server\obj\Debug\net8.0\ProyectoEscuela.Server.pdb
 C:\Users\yass\Desktop\proyectoescuela\TrabajoAutomatizacionDeProcesos-dev\ProyectoEscuela.Server\obj\Debug\net8.0\ProyectoEscuela.Server.genruntimeconfig.cache
 C:\Users\yass\Desktop\proyectoescuela\TrabajoAutomatizacionDeProcesos-dev\ProyectoEscuela.Server\obj\Debug\net8.0\ref\ProyectoEscuela.Server.dll
+C:\Users\yass\Desktop\proyectoescuela\TrabajoAutomatizacionDeProcesos-dev\ProyectoEscuela.Server\obj\Debug\net8.0\ProyectoEscuela.Server.sourcelink.json

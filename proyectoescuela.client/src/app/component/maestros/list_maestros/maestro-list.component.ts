@@ -14,11 +14,11 @@ export class MaestroListComponent {
   @Output() borrarMaestro = new EventEmitter<any>();
 
 
-  editarMaestroHandler(alumno: any) {
-    this.editarMaestro.emit(alumno);
+  editarMaestroHandler(maestro: any) {
+    this.editarMaestro.emit(maestro);
   }
 
-  borrarMaestroHandler(alumno: any) {
-    this.borrarMaestro.emit(alumno);
+  borrarMaestroHandler(maestro: any) {
+    this.borrarMaestro.emit(maestro);
   }
 }

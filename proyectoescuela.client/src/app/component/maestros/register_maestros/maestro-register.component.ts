@@ -46,7 +46,7 @@ export class MaestroRegisterComponent implements OnChanges {
   onSubmit() {
     if (this.maestroForm.valid) {
       if (this.isEdit && this.maestro?.id) {
-        // Editar
+    
         this.maestroService.actualizarMaestro(this.maestro.id, this.maestroForm.value).subscribe({
           next: () => {
             this.mensaje = '¡Maestro actualizado exitosamente!';

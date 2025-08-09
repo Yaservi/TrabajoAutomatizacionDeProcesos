@@ -24,7 +24,8 @@
         </div>
         <div class="mb-3">
           <label class="form-label"><i class="bi bi-calendar-event"></i> Fecha de Asistencia</label>
-          <input type="date" class="form-control" formControlName="fechaAsistencia" [ngClass]="{'is-invalid': asistenciaForm.get('fechaAsistencia')?.invalid && asistenciaForm.get('fechaAsistencia')?.touched}">
+          <input type="date" class="form-control" formControlName="fechaAsistencia" [readonly]="isEdit"
+                 [ngClass]="{'is-invalid': asistenciaForm.get('fechaAsistencia')?.invalid && asistenciaForm.get('fechaAsistencia')?.touched}">
           <div *ngIf="asistenciaForm.get('fechaAsistencia')?.invalid && asistenciaForm.get('fechaAsistencia')?.touched" class="invalid-feedback">
             La fecha de asistencia es obligatoria.
           </div>

@@ -11,9 +11,9 @@ import { AsistenciaService } from '../../../services/asistencia/asistencia-servi
   imports: [ReactiveFormsModule, CommonModule]
 })
 export class AsistenciaRegisterComponent implements OnChanges {
-  @Input() asistencia: any = null; 
-  @Input() alumnos: any[] = [];    
-  @Input() materias: any[] = [];   
+  @Input() asistencia: any = null;
+  @Input() alumnos: any[] = [];
+  @Input() materias: any[] = [];
   @Output() submitted = new EventEmitter<void>();
 
   asistenciaForm: FormGroup;
@@ -34,7 +34,17 @@ export class AsistenciaRegisterComponent implements OnChanges {
     if (changes['asistencia']) {
       if (this.asistencia) {
         this.isEdit = true;
-        this.asistenciaForm.patchValue(this.asistencia);
+
+        // Format the date for the form
+        const formattedAsistencia = { ...this.asistencia };
+
+        if (formattedAsistencia.fechaAsistencia) {
+          // Convert to YYYY-MM-DD format for the date input
+          const date = new Date(formattedAsistencia.fechaAsistencia);
+          formattedAsistencia.fechaAsistencia = date.toISOString().split('T')[0];
+        }
+
+        this.asistenciaForm.patchValue(formattedAsistencia);
       } else {
         this.isEdit = false;
         this.asistenciaForm.reset();

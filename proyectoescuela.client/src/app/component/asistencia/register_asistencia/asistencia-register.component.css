@@ -30,7 +30,7 @@
   margin-bottom: 1.4rem !important;
 }
 
-.form-control {
+.form-control, .form-select {
   border-radius: 0.5rem;
   border: 1.5px solid #c7d2fe;
   font-size: 1.08rem;
@@ -41,7 +41,7 @@
   margin-bottom: 0.2rem;
 }
 
-  .form-control:focus {
+  .form-control:focus, .form-select:focus {
     border-color: #2563eb;
     box-shadow: 0 0 0 2px #2563eb22;
   }

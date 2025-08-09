@@ -7,10 +7,7 @@ namespace ProyectoEscuela.Server.Validations.Asistencia
     {
         public AsistenciaUpdateDtoValidation()
         {
-            RuleFor(x => x.Estado)
-              .NotEmpty().WithMessage("El estado no puede estar vacío.")
-              .Must(estado => estado == "Presente" || estado == "Ausente" || estado == "Excusa")
-              .WithMessage("El estado debe ser 'Presente', 'Ausente' o 'Excusa'.");
+           
             RuleFor(x => x.FechaAsistencia)
                 .NotEmpty().WithMessage("La fecha de asistencia no puede estar vacía.")
                 .LessThanOrEqualTo(DateTime.Now).WithMessage("La fecha de asistencia no puede ser futura.");
