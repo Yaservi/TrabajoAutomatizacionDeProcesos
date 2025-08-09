@@ -13,14 +13,22 @@
           <label class="form-label"><i class="bi bi-person"></i> Nombre</label>
           <input type="text" class="form-control" formControlName="nombre" [ngClass]="{'is-invalid': alumnoForm.get('nombre')?.invalid && alumnoForm.get('nombre')?.touched}">
           <div *ngIf="alumnoForm.get('nombre')?.invalid && alumnoForm.get('nombre')?.touched" class="invalid-feedback">
-            El nombre es obligatorio.
+            <div *ngIf="alumnoForm.get('nombre')?.errors?.['required']">El nombre es obligatorio.</div>
+            <div *ngIf="alumnoForm.get('nombre')?.errors?.['minlength']">El nombre debe tener al menos 2 caracteres.</div>
+            <div *ngIf="alumnoForm.get('nombre')?.errors?.['maxlength']">El nombre no puede exceder 50 caracteres.</div>
+            <div *ngIf="alumnoForm.get('nombre')?.errors?.['containsNumbers']">El nombre no puede contener números.</div>
+            <div *ngIf="alumnoForm.get('nombre')?.errors?.['repeatedLetters']">El nombre no puede tener la misma letra repetida más de 4 veces consecutivamente.</div>
           </div>
         </div>
         <div class="mb-3">
           <label class="form-label"><i class="bi bi-person"></i> Apellido</label>
           <input type="text" class="form-control" formControlName="apellido" [ngClass]="{'is-invalid': alumnoForm.get('apellido')?.invalid && alumnoForm.get('apellido')?.touched}">
           <div *ngIf="alumnoForm.get('apellido')?.invalid && alumnoForm.get('apellido')?.touched" class="invalid-feedback">
-            El apellido es obligatorio.
+            <div *ngIf="alumnoForm.get('apellido')?.errors?.['required']">El apellido es obligatorio.</div>
+            <div *ngIf="alumnoForm.get('apellido')?.errors?.['minlength']">El apellido debe tener al menos 2 caracteres.</div>
+            <div *ngIf="alumnoForm.get('apellido')?.errors?.['maxlength']">El apellido no puede exceder 50 caracteres.</div>
+            <div *ngIf="alumnoForm.get('apellido')?.errors?.['containsNumbers']">El apellido no puede contener números.</div>
+            <div *ngIf="alumnoForm.get('apellido')?.errors?.['repeatedLetters']">El apellido no puede tener la misma letra repetida más de 4 veces consecutivamente.</div>
           </div>
         </div>
         <div class="mb-3">
@@ -34,21 +42,27 @@
           <label class="form-label"><i class="bi bi-calendar"></i> Fecha de Nacimiento</label>
           <input type="date" class="form-control" formControlName="fechaNacimiento" [ngClass]="{'is-invalid': alumnoForm.get('fechaNacimiento')?.invalid && alumnoForm.get('fechaNacimiento')?.touched}">
           <div *ngIf="alumnoForm.get('fechaNacimiento')?.invalid && alumnoForm.get('fechaNacimiento')?.touched" class="invalid-feedback">
-            La fecha de nacimiento es obligatoria.
+            <div *ngIf="alumnoForm.get('fechaNacimiento')?.errors?.['required']">La fecha de nacimiento es obligatoria.</div>
+            <div *ngIf="alumnoForm.get('fechaNacimiento')?.errors?.['dateNotOldEnough']">La fecha de nacimiento debe ser al menos 5 años atrás.</div>
           </div>
         </div>
         <div class="mb-3">
           <label class="form-label"><i class="bi bi-telephone"></i> Teléfono</label>
-          <input type="text" class="form-control" formControlName="telefono" [ngClass]="{'is-invalid': alumnoForm.get('telefono')?.invalid && alumnoForm.get('telefono')?.touched}">
+          <input type="text" class="form-control" formControlName="telefono" [ngClass]="{'is-invalid': alumnoForm.get('telefono')?.invalid && alumnoForm.get('telefono')?.touched}" placeholder="Solo números">
           <div *ngIf="alumnoForm.get('telefono')?.invalid && alumnoForm.get('telefono')?.touched" class="invalid-feedback">
-            El teléfono es obligatorio.
+            <div *ngIf="alumnoForm.get('telefono')?.errors?.['required']">El teléfono es obligatorio.</div>
+            <div *ngIf="alumnoForm.get('telefono')?.errors?.['minlength']">El teléfono debe tener al menos 7 dígitos.</div>
+            <div *ngIf="alumnoForm.get('telefono')?.errors?.['maxlength']">El teléfono no puede exceder 15 dígitos.</div>
+            <div *ngIf="alumnoForm.get('telefono')?.errors?.['containsNonNumbers']">El teléfono solo puede contener números.</div>
           </div>
         </div>
         <div class="mb-3">
           <label class="form-label"><i class="bi bi-envelope"></i> Email</label>
           <input type="email" class="form-control" formControlName="email" [ngClass]="{'is-invalid': alumnoForm.get('email')?.invalid && alumnoForm.get('email')?.touched}">
           <div *ngIf="alumnoForm.get('email')?.invalid && alumnoForm.get('email')?.touched" class="invalid-feedback">
-            Ingresa un email válido.
+            <div *ngIf="alumnoForm.get('email')?.errors?.['required']">El email es obligatorio.</div>
+            <div *ngIf="alumnoForm.get('email')?.errors?.['email']">Ingresa un email válido.</div>
+            <div *ngIf="alumnoForm.get('email')?.errors?.['maxlength']">El email no puede exceder 100 caracteres.</div>
           </div>
         </div>
         <div class="d-grid gap-2">

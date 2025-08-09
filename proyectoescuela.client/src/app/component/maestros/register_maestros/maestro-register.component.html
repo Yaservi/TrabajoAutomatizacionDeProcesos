@@ -13,14 +13,22 @@
           <label class="form-label"><i class="bi bi-person"></i> Nombre</label>
           <input type="text" class="form-control" formControlName="nombre" [ngClass]="{'is-invalid': maestroForm.get('nombre')?.invalid && maestroForm.get('nombre')?.touched}">
           <div *ngIf="maestroForm.get('nombre')?.invalid && maestroForm.get('nombre')?.touched" class="invalid-feedback">
-            El nombre es obligatorio.
+            <div *ngIf="maestroForm.get('nombre')?.errors?.['required']">El nombre es obligatorio.</div>
+            <div *ngIf="maestroForm.get('nombre')?.errors?.['minlength']">El nombre debe tener al menos 2 caracteres.</div>
+            <div *ngIf="maestroForm.get('nombre')?.errors?.['maxlength']">El nombre no puede exceder 50 caracteres.</div>
+            <div *ngIf="maestroForm.get('nombre')?.errors?.['containsNumbers']">El nombre no puede contener números.</div>
+            <div *ngIf="maestroForm.get('nombre')?.errors?.['repeatedLetters']">El nombre no puede tener la misma letra repetida más de 4 veces consecutivamente.</div>
           </div>
         </div>
         <div class="mb-3">
           <label class="form-label"><i class="bi bi-person"></i> Apellido</label>
           <input type="text" class="form-control" formControlName="apellido" [ngClass]="{'is-invalid': maestroForm.get('apellido')?.invalid && maestroForm.get('apellido')?.touched}">
           <div *ngIf="maestroForm.get('apellido')?.invalid && maestroForm.get('apellido')?.touched" class="invalid-feedback">
-            El apellido es obligatorio.
+            <div *ngIf="maestroForm.get('apellido')?.errors?.['required']">El apellido es obligatorio.</div>
+            <div *ngIf="maestroForm.get('apellido')?.errors?.['minlength']">El apellido debe tener al menos 2 caracteres.</div>
+            <div *ngIf="maestroForm.get('apellido')?.errors?.['maxlength']">El apellido no puede exceder 50 caracteres.</div>
+            <div *ngIf="maestroForm.get('apellido')?.errors?.['containsNumbers']">El apellido no puede contener números.</div>
+            <div *ngIf="maestroForm.get('apellido')?.errors?.['repeatedLetters']">El apellido no puede tener la misma letra repetida más de 4 veces consecutivamente.</div>
           </div>
         </div>
         <div class="mb-3">
@@ -34,28 +42,39 @@
           <label class="form-label"><i class="bi bi-calendar"></i> Fecha de Nacimiento</label>
           <input type="date" class="form-control" formControlName="fechaNacimiento" [ngClass]="{'is-invalid': maestroForm.get('fechaNacimiento')?.invalid && maestroForm.get('fechaNacimiento')?.touched}">
           <div *ngIf="maestroForm.get('fechaNacimiento')?.invalid && maestroForm.get('fechaNacimiento')?.touched" class="invalid-feedback">
-            La fecha de nacimiento es obligatoria.
+            <div *ngIf="maestroForm.get('fechaNacimiento')?.errors?.['required']">La fecha de nacimiento es obligatoria.</div>
+            <div *ngIf="maestroForm.get('fechaNacimiento')?.errors?.['dateNotOldEnough']">La fecha de nacimiento debe ser al menos 5 años atrás.</div>
           </div>
         </div>
         <div class="mb-3">
           <label class="form-label"><i class="bi bi-telephone"></i> Teléfono</label>
-          <input type="text" class="form-control" formControlName="telefono" [ngClass]="{'is-invalid': maestroForm.get('telefono')?.invalid && maestroForm.get('telefono')?.touched}">
-          <div *ngIf="maestroForm.get('telefono')?.invalid && maestroForm.get('telefono')?.touched" class="invalid-feedback">
-            El teléfono es obligatorio.
+          <div class="input-group">
+            
+            <input type="text" class="form-control" formControlName="telefono" [ngClass]="{'is-invalid': maestroForm.get('telefono')?.invalid && maestroForm.get('telefono')?.touched}" placeholder="Solo números">
+            <div *ngIf="maestroForm.get('telefono')?.invalid && maestroForm.get('telefono')?.touched" class="invalid-feedback">
+              <div *ngIf="maestroForm.get('telefono')?.errors?.['required']">El teléfono es obligatorio.</div>
+              <div *ngIf="maestroForm.get('telefono')?.errors?.['minlength']">El teléfono debe tener al menos 7 dígitos.</div>
+              <div *ngIf="maestroForm.get('telefono')?.errors?.['maxlength']">El teléfono no puede exceder 15 dígitos.</div>
+              <div *ngIf="maestroForm.get('telefono')?.errors?.['containsNonNumbers']">El teléfono solo puede contener números.</div>
+            </div>
           </div>
         </div>
         <div class="mb-3">
           <label class="form-label"><i class="bi bi-envelope"></i> Email</label>
           <input type="email" class="form-control" formControlName="email" [ngClass]="{'is-invalid': maestroForm.get('email')?.invalid && maestroForm.get('email')?.touched}">
           <div *ngIf="maestroForm.get('email')?.invalid && maestroForm.get('email')?.touched" class="invalid-feedback">
-            Ingresa un email válido.
+            <div *ngIf="maestroForm.get('email')?.errors?.['required']">El email es obligatorio.</div>
+            <div *ngIf="maestroForm.get('email')?.errors?.['email']">Ingresa un email válido.</div>
+            <div *ngIf="maestroForm.get('email')?.errors?.['maxlength']">El email no puede exceder 100 caracteres.</div>
           </div>
         </div>
         <div class="mb-3">
           <label class="form-label"><i class="bi bi-book"></i> Materia</label>
           <input type="text" class="form-control" formControlName="materia" [ngClass]="{'is-invalid': maestroForm.get('materia')?.invalid && maestroForm.get('materia')?.touched}">
           <div *ngIf="maestroForm.get('materia')?.invalid && maestroForm.get('materia')?.touched" class="invalid-feedback">
-            La materia es obligatoria.
+            <div *ngIf="maestroForm.get('materia')?.errors?.['required']">La materia es obligatoria.</div>
+            <div *ngIf="maestroForm.get('materia')?.errors?.['minlength']">La materia debe tener al menos 2 caracteres.</div>
+            <div *ngIf="maestroForm.get('materia')?.errors?.['maxlength']">La materia no puede exceder 50 caracteres.</div>
           </div>
         </div>
         <div class="d-grid gap-2">
@@ -68,4 +87,3 @@
     </div>
   </div>
 </div>
-
