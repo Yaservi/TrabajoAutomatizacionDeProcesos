@@ -1,5 +1,4 @@
-﻿
-using FluentValidation;
+﻿using FluentValidation;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.RateLimiting;
@@ -64,12 +63,12 @@ namespace ProyectoEscuela.Server.Controllers
 
         [HttpPut("{id}")]
         [EnableRateLimiting("fixed")]
-        public async Task<IActionResult> UpdateAlumno([FromBody] Guid id, [FromForm] AlumnoUpdateDto alumnoUpdateDto, CancellationToken cancellationToken)
+        public async Task<IActionResult> UpdateAlumno([FromRoute] Guid id, [FromBody] AlumnoUpdateDto alumnoUpdateDto, CancellationToken cancellationToken)
         {
             var validationResult = await updateValidator.ValidateAsync(alumnoUpdateDto, cancellationToken);
 
             if (!validationResult.IsValid)
-                return BadRequest(validationResult);
+                return BadRequest(validationResult.Errors);
             try
             {
                 var alumnoDto = await alumnoService.UpdateAsync(id, alumnoUpdateDto, cancellationToken);
